@@ -1,0 +1,70 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+#emojis{
+  letter-spacing: 10px;
+}
+
+
+#webcam_view{
+  border-color: black;
+  border-width: 5px;
+  border-style: dashed;
+  width: 300;
+  height: 300px;
+}
+#webcam_label{
+  color: chartreuse;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#snapshot_view{
+  border-color: black;
+  border-width: 5px;
+  border-style: dashed;
+  width: 300;
+  height: 300px;
+}
+#snapshot{
+  color: chartreuse;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#prediction_1{
+  color: chartreuse;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#prediction_2{
+  color: chartreuse;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

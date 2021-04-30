@@ -1,0 +1,72 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h4 class="btn btn-warning" id="emojis">EMOTION TO EMOJI APP <br>
+      <span>&#x1F600;</span><span>&#x1F60A;</span><span>&#x1F61E;</span><span>&#x1F625;</span><span>&#x1F621;</span><span>&#x1F624;</span></h4>
+      <br>
+      <br>
+      <br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+      
+     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <label id="webcam_label">Webcam view</label>
+      <div id="webcam_view">
+     
+      </div>
+      <br>
+      <button class="btn btn-warning" onclick="capture()">Capture Image</button>
+     </div>
+
+     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+       <label id="prediction_1">Prediction-1</label>
+       <h1 id="emotion_1"></h1>
+       <h1 id="emoji_1"></h1>
+       <label id="prediction_2">Prediction-2</label>
+       <h1 id="emotion_2"></h1>
+       <h1 id="emoji_2"></h1>
+     </div>
+
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+	      <label id="snapshot">Snapshot - </label>
+         <div id="snapshot_view">
+
+         </div>      
+        <br>
+      <button onclick="identify()" class="btn btn-success">Identify Image</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
